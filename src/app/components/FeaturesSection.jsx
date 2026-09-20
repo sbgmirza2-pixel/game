@@ -35,51 +35,63 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="relative py-10 md:py-14 px-4 max-w-3xl mx-auto overflow-hidden">
-      {/* Top Section Divider Line */}
-      <div className="w-full max-w-xl mx-auto mb-8 md:mb-12 flex items-center justify-center">
-        <div 
-          aria-hidden="true" 
-          className="h-px w-full bg-gradient-to-r from-transparent via-[#81755D]/40 to-transparent" 
-        />
+    <section className="relative w-full py-12 md:py-16 px-4 bg-[#0c0b09] overflow-hidden">
+      
+      {/* Background Soft Glow */}
+      <div 
+        aria-hidden="true" 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-xl h-64 bg-[#81755D]/10 rounded-full blur-3xl pointer-events-none -z-10" 
+      />
+
+      <div className="max-w-3xl mx-auto">
+        {/* Top Section Divider Line */}
+        <div className="w-full max-w-xl mx-auto mb-8 md:mb-12 flex items-center justify-center">
+          <div 
+            aria-hidden="true" 
+            className="h-px w-full bg-gradient-to-r from-transparent via-[#81755D]/30 to-transparent" 
+          />
+        </div>
+
+        {/* Main Heading (H2) */}
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3 md:mb-4">
+            Key Features of <span className="text-[#a39478]">Train 45 APK</span>
+          </h2>
+          <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto font-normal">
+            Train 45 game is available with several features that make its gameplay more interesting. Here are the key features players can enjoy when they are playing:
+          </p>
+        </div>
+
+        {/* Timeline Layout with Sharp Edge Styling */}
+        <div className="relative space-y-6 sm:space-y-7 pl-6 sm:pl-8">
+          {/* Continuous Vertical Line */}
+          <div 
+            aria-hidden="true"
+            className="absolute left-[7px] sm:left-[11px] top-3 bottom-3 w-px bg-gradient-to-b from-[#81755D]/50 via-[#81755D]/30 to-[#81755D]/10"
+          />
+
+          {features.map((item) => (
+            <div key={item.title} className="relative group">
+              {/* Sharp Timeline Diamond Node */}
+              <div 
+                aria-hidden="true" 
+                className="absolute -left-[22px] sm:-left-[26px] top-4 w-2.5 h-2.5 rotate-45 bg-[#a39478] border border-[#161412] shadow-[0_0_8px_rgba(163,148,120,0.6)] group-hover:scale-125 group-hover:bg-white transition-all duration-300" 
+              />
+
+              {/* Content Card with Sharp Corners */}
+              <div className="bg-[#161412]/90 border border-[#81755D]/20 rounded-lg p-4 sm:p-5 shadow-lg backdrop-blur-md transition-all duration-300 group-hover:border-[#a39478]/50 group-hover:bg-[#1a1815]">
+                <h3 className="text-base sm:text-lg font-bold text-white mb-2 tracking-tight group-hover:text-[#a39478] transition-colors duration-200 flex items-center gap-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed font-normal">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
-      {/* Main Heading (H2) */}
-      <div className="text-center mb-8 md:mb-10">
-        <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3 md:mb-4">
-          Key Features of <span className="text-[#81755D]">Train 45 APK</span>
-        </h2>
-        <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto font-normal">
-          Train 45 game is available with several features that make its gameplay more interesting. Here are the key features players can enjoy when they are playing:
-        </p>
-      </div>
-
-      {/* Timeline Layout with Flex/Relative Binding */}
-      <div className="relative space-y-6 md:space-y-8 pl-6 sm:pl-8">
-        {/* Continuous Vertical Line */}
-        <div 
-          aria-hidden="true"
-          className="absolute left-[7px] sm:left-[11px] top-2 bottom-2 w-px bg-[#81755D]/30"
-        />
-
-        {features.map((item) => (
-          <div key={item.title} className="relative group">
-            {/* Timeline Dot - Centered on vertical line */}
-            <div 
-              aria-hidden="true" 
-              className="absolute -left-[23px] sm:-left-[27px] top-1.5 w-3 h-3 rounded-full bg-[#81755D] ring-4 ring-[#121110] group-hover:scale-125 transition-transform duration-200" 
-            />
-
-            {/* Content */}
-            <h3 className="text-base sm:text-lg font-bold text-white mb-1 tracking-tight group-hover:text-[#81755D] transition-colors duration-200">
-              {item.title}
-            </h3>
-            <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed font-normal">
-              {item.desc}
-            </p>
-          </div>
-        ))}
-      </div>
     </section>
   );
 }

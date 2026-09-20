@@ -9,12 +9,12 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-2.5 sm:top-4 left-0 right-0 z-50 px-2.5 sm:px-4 w-full">
-      <header className="max-w-5xl mx-auto backdrop-blur-xl bg-[#635041]/90 border border-white/10 rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] transition-all duration-300">
+      <header className="max-w-5xl mx-auto backdrop-blur-xl bg-[#635041]/90 border border-white/10 rounded-lg shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] transition-all duration-300">
         <div className="px-3 sm:px-5 h-14 sm:h-16 flex items-center justify-between gap-2">
           
-          {/* Left: Brand Logo with Distinct Visible Theme Outline */}
+          {/* Left: Brand Logo with Sharp Corners & Theme Outline */}
           <Link href="/" className="flex items-center group shrink-0">
-            <div className="relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-xl overflow-hidden bg-[#121110] border-2 border-[#81755D] shadow-[0_0_12px_rgba(129,117,93,0.5)] group-hover:border-amber-200 group-hover:shadow-[0_0_18px_rgba(253,230,138,0.6)] group-hover:scale-105 transition-all duration-300 shrink-0">
+            <div className="relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-md overflow-hidden bg-[#121110] border-2 border-[#81755D] shadow-[0_0_12px_rgba(129,117,93,0.5)] group-hover:border-[#a39478] group-hover:shadow-[0_0_18px_rgba(163,148,120,0.6)] group-hover:scale-105 transition-all duration-300 shrink-0">
               <Image 
                 src="/logo.webp" 
                 alt="Train 45 Logo" 
@@ -26,33 +26,33 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Center: Desktop Nav Pills */}
-          <nav className="hidden md:flex items-center gap-1.5 bg-[#81755D]/20 p-1.5 rounded-xl border border-white/5">
+          {/* Center: Desktop Nav Pills (Sharp Style) */}
+          <nav className="hidden md:flex items-center gap-1.5 bg-[#81755D]/20 p-1.5 rounded-md border border-white/5">
             <Link 
               href="/" 
-              className="px-5 py-2 text-sm md:text-base font-semibold text-white rounded-lg hover:bg-white/10 transition-all duration-200"
+              className="px-5 py-1.5 text-sm md:text-base font-semibold text-white rounded hover:bg-white/10 transition-all duration-200"
             >
               Home
             </Link>
             <Link 
               href="#blog" 
-              className="px-5 py-2 text-sm md:text-base font-semibold text-amber-100/80 rounded-lg hover:text-white hover:bg-white/10 transition-all duration-200"
+              className="px-5 py-1.5 text-sm md:text-base font-semibold text-[#c9beaa] rounded hover:text-white hover:bg-white/10 transition-all duration-200"
             >
               Blog
             </Link>
             <Link 
               href="#faqs" 
-              className="px-5 py-2 text-sm md:text-base font-semibold text-amber-100/80 rounded-lg hover:text-white hover:bg-white/10 transition-all duration-200"
+              className="px-5 py-1.5 text-sm md:text-base font-semibold text-[#c9beaa] rounded hover:text-white hover:bg-white/10 transition-all duration-200"
             >
               FAQs
             </Link>
           </nav>
 
-          {/* Right: Download Button & Mobile Toggle */}
+          {/* Right: Sharp Download Button & Mobile Toggle */}
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <Link
               href="#download"
-              className="relative group overflow-hidden rounded-xl px-3 sm:px-5 py-2 font-bold text-[11px] sm:text-xs text-white bg-gradient-to-r from-[#81755D] to-[#635041] border border-white/20 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-95 whitespace-nowrap"
+              className="relative group overflow-hidden rounded-md px-3 sm:px-5 py-2 font-bold text-[11px] sm:text-xs text-white bg-gradient-to-r from-[#81755D] to-[#635041] border border-white/20 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-95 whitespace-nowrap"
             >
               <span className="relative z-10 flex items-center gap-1 sm:gap-2 tracking-wider uppercase">
                 Download
@@ -67,10 +67,10 @@ export default function Navbar() {
               </span>
             </Link>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button (Sharp Corners) */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-1.5 sm:p-2 rounded-xl text-white hover:bg-white/10 transition-colors border border-white/10 shrink-0"
+              className="md:hidden p-1.5 sm:p-2 rounded-md text-white hover:bg-white/10 transition-colors border border-white/10 shrink-0"
               aria-label="Toggle Navigation"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,27 +85,27 @@ export default function Navbar() {
 
         </div>
 
-        {/* Mobile Dropdown Drawer */}
+        {/* Mobile Dropdown Drawer (Sharp Bottom Corners) */}
         {isOpen && (
-          <div className="md:hidden border-t border-white/10 px-4 py-3 space-y-2 bg-[#635041]/95 rounded-b-2xl">
+          <div className="md:hidden border-t border-white/10 px-4 py-3 space-y-1.5 bg-[#635041]/95 rounded-b-lg">
             <Link 
               href="/" 
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 text-sm sm:text-base font-semibold text-white rounded-lg hover:bg-white/10 transition-all"
+              className="block px-3 py-2 text-sm sm:text-base font-semibold text-white rounded hover:bg-white/10 transition-all"
             >
               Home
             </Link>
             <Link 
               href="#blog" 
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 text-sm sm:text-base font-semibold text-amber-100/80 hover:text-white rounded-lg hover:bg-white/10 transition-all"
+              className="block px-3 py-2 text-sm sm:text-base font-semibold text-[#c9beaa] hover:text-white rounded hover:bg-white/10 transition-all"
             >
               Blog
             </Link>
             <Link 
               href="#faqs" 
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 text-sm sm:text-base font-semibold text-amber-100/80 hover:text-white rounded-lg hover:bg-white/10 transition-all"
+              className="block px-3 py-2 text-sm sm:text-base font-semibold text-[#c9beaa] hover:text-white rounded hover:bg-white/10 transition-all"
             >
               FAQs
             </Link>

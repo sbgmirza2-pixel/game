@@ -3,6 +3,12 @@ import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 import GameInfoSection from './components/GameInfoSection';
 import FeaturesSection from './components/FeaturesSection';
+import DownloadGuideSection from './components/DownloadGuideSection';
+import SystemRequirementsSection from './components/SystemRequirementsSection';
+import SafetySection from './components/SafetySection';
+import TipsSection from './components/TipsSection';
+import ProsConsSection from './components/ProsConsSection';
+import ComparisonSection from './components/ComparisonSection';
 
 export default function HomePage() {
   return (
@@ -13,6 +19,12 @@ export default function HomePage() {
         <AboutSection />
         <GameInfoSection />
         <FeaturesSection />
+        <DownloadGuideSection />
+        <SystemRequirementsSection />
+        <SafetySection />
+        <TipsSection />
+        <ProsConsSection />
+        <ComparisonSection />
       </main>
     </div>
   );
