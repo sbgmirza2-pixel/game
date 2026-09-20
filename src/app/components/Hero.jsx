@@ -100,12 +100,9 @@ export default function Hero() {
           Train 45 <span className="text-[#a39478]">APK</span>
         </h1>
 
-        <div className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed space-y-3 md:space-y-4 max-w-3xl mx-auto font-normal">
+        <div className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto font-normal">
           <p>
-            Train 45 is a strange journey for players, where the train does not look normal at first. They walk through the different sections, they look around, and notice anything unusual. The game blends mystery, exploration, and anomaly detection, but it’s the hidden storylines and character interaction that make the journey interesting. Players discover items while exploring the train.
-          </p>
-          <p className="text-[#c9beaa] text-xs sm:text-sm md:text-base font-normal">
-            In this article, we will explore Train 45 gameplay, key features, system requirements, pros and cons, and other important things players should know before they start playing.
+            Train 45 is a strange journey for players, where the train does not look normal at first. They walk through the different sections, they look around, and notice anything unusual. The game blends mystery, exploration, and anomaly detection, but it’s the hidden storylines and character interaction that make the journey interesting. Players discover items while exploring the train. In this article, we will explore Train 45 gameplay, key features, system requirements, pros and cons, and other important things players should know before they start playing.
           </p>
         </div>
 

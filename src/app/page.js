@@ -9,6 +9,8 @@ import SafetySection from './components/SafetySection';
 import TipsSection from './components/TipsSection';
 import ProsConsSection from './components/ProsConsSection';
 import ComparisonSection from './components/ComparisonSection';
+import FaqPreviewSection from './components/FaqPreviewSection';
+
 
 export default function HomePage() {
   return (
@@ -25,6 +27,8 @@ export default function HomePage() {
         <TipsSection />
         <ProsConsSection />
         <ComparisonSection />
+        <FaqPreviewSection />
+        
       </main>
     </div>
   );

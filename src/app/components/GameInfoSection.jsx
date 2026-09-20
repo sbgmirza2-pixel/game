@@ -30,14 +30,12 @@ export default function GameInfoSection() {
           Game <span className="text-[#a39478]">Information</span>
         </h2>
 
-        {/* Definition List Grid */}
+        {/* Definition List Grid - 8 items perfect 2-column layout */}
         <dl className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 text-left">
           {gameDetails.map((item) => (
             <div
               key={item.label}
-              className={`relative p-4 rounded-lg bg-[#161412]/90 border border-[#81755D]/20 backdrop-blur-md flex flex-col justify-center transition-all duration-300 hover:border-[#a39478]/50 hover:bg-[#1a1815] shadow-lg group ${
-                item.label === 'Language' ? 'md:col-span-2' : ''
-              }`}
+              className="relative p-4 rounded-lg bg-[#161412]/90 border border-[#81755D]/20 backdrop-blur-md flex flex-col justify-center transition-all duration-300 hover:border-[#a39478]/50 hover:bg-[#1a1815] shadow-lg group"
             >
               {/* Subtle Corner Highlight */}
               <div aria-hidden="true" className="absolute top-0 left-0 w-1 h-full bg-[#81755D]/40 rounded-l-lg opacity-0 group-hover:opacity-100 transition-opacity" />

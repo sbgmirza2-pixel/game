@@ -1,4 +1,6 @@
 import { Outfit } from 'next/font/google';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import './globals.css';
 
 const fontOutfit = Outfit({
@@ -15,8 +17,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${fontOutfit.variable}`}>
-      <body className="font-sans bg-[#F9F8F6] text-[#222222] antialiased min-h-screen flex flex-col justify-between">
-        {children}
+      <body className="font-sans bg-[#0c0b09] text-gray-100 antialiased min-h-screen flex flex-col justify-between">
+        <main className="grow">
+          {children}
+        </main>
+        
+        {/* Footer */}
+        <Footer />
+        
+        {/* Scroll To Top Floating Icon */}
+        <ScrollToTop />
       </body>
     </html>
   );

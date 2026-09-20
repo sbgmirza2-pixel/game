@@ -12,7 +12,7 @@ export default function Navbar() {
       <header className="max-w-5xl mx-auto backdrop-blur-xl bg-[#635041]/90 border border-white/10 rounded-lg shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] transition-all duration-300">
         <div className="px-3 sm:px-5 h-14 sm:h-16 flex items-center justify-between gap-2">
           
-          {/* Left: Brand Logo with Sharp Corners & Theme Outline */}
+          {/* Left: Brand Logo */}
           <Link href="/" className="flex items-center group shrink-0">
             <div className="relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-md overflow-hidden bg-[#121110] border-2 border-[#81755D] shadow-[0_0_12px_rgba(129,117,93,0.5)] group-hover:border-[#a39478] group-hover:shadow-[0_0_18px_rgba(163,148,120,0.6)] group-hover:scale-105 transition-all duration-300 shrink-0">
               <Image 
@@ -26,7 +26,7 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Center: Desktop Nav Pills (Sharp Style) */}
+          {/* Center: Desktop Nav Pills */}
           <nav className="hidden md:flex items-center gap-1.5 bg-[#81755D]/20 p-1.5 rounded-md border border-white/5">
             <Link 
               href="/" 
@@ -35,20 +35,21 @@ export default function Navbar() {
               Home
             </Link>
             <Link 
-              href="#blog" 
+              href="/blogs" 
               className="px-5 py-1.5 text-sm md:text-base font-semibold text-[#c9beaa] rounded hover:text-white hover:bg-white/10 transition-all duration-200"
             >
               Blog
             </Link>
+            {/* Updated href from #faqs to /faqs */}
             <Link 
-              href="#faqs" 
+              href="/faqs" 
               className="px-5 py-1.5 text-sm md:text-base font-semibold text-[#c9beaa] rounded hover:text-white hover:bg-white/10 transition-all duration-200"
             >
               FAQs
             </Link>
           </nav>
 
-          {/* Right: Sharp Download Button & Mobile Toggle */}
+          {/* Right: Download Button & Mobile Toggle */}
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <Link
               href="#download"
@@ -67,7 +68,7 @@ export default function Navbar() {
               </span>
             </Link>
 
-            {/* Mobile Menu Button (Sharp Corners) */}
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-1.5 sm:p-2 rounded-md text-white hover:bg-white/10 transition-colors border border-white/10 shrink-0"
@@ -85,7 +86,7 @@ export default function Navbar() {
 
         </div>
 
-        {/* Mobile Dropdown Drawer (Sharp Bottom Corners) */}
+        {/* Mobile Dropdown Drawer */}
         {isOpen && (
           <div className="md:hidden border-t border-white/10 px-4 py-3 space-y-1.5 bg-[#635041]/95 rounded-b-lg">
             <Link 
@@ -96,14 +97,15 @@ export default function Navbar() {
               Home
             </Link>
             <Link 
-              href="#blog" 
+              href="/blogs" 
               onClick={() => setIsOpen(false)}
               className="block px-3 py-2 text-sm sm:text-base font-semibold text-[#c9beaa] hover:text-white rounded hover:bg-white/10 transition-all"
             >
-              Blog
+              Blogs
             </Link>
+            {/* Updated href from #faqs to /faqs */}
             <Link 
-              href="#faqs" 
+              href="/faqs" 
               onClick={() => setIsOpen(false)}
               className="block px-3 py-2 text-sm sm:text-base font-semibold text-[#c9beaa] hover:text-white rounded hover:bg-white/10 transition-all"
             >
