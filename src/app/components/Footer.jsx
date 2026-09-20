@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -55,10 +56,19 @@ export default function Footer() {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
         
-        {/* Brand Info */}
+        {/* Brand Info & Logo */}
         <div className="md:col-span-2 space-y-4">
-          <Link href="/" className="text-2xl font-extrabold text-white tracking-tight inline-block">
-            Train 45 <span className="text-[#a39478]">APK</span>
+          <Link href="/" className="inline-flex items-center gap-3 group">
+            <Image 
+              src="/logo.webp" 
+              alt="Train 45 Logo" 
+              width={40} 
+              height={40} 
+              className="w-10 h-10 object-contain rounded-lg border border-[#81755D]/30 group-hover:border-[#a39478] transition-colors"
+            />
+            <span className="text-2xl font-extrabold text-white tracking-tight">
+              Train 45 <span className="text-[#a39478]">APK</span>
+            </span>
           </Link>
           <p className="text-sm text-gray-300 max-w-sm leading-relaxed">
             Explore decision-driven gameplay and story paths. Get authentic updates, guides, and complete FAQs about Train 45.
