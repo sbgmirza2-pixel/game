@@ -40,7 +40,6 @@ export default function Navbar() {
             >
               Blog
             </Link>
-            {/* Updated href from #faqs to /faqs */}
             <Link 
               href="/faqs" 
               className="px-5 py-1.5 text-sm md:text-base font-semibold text-[#c9beaa] rounded hover:text-white hover:bg-white/10 transition-all duration-200"
@@ -51,8 +50,9 @@ export default function Navbar() {
 
           {/* Right: Download Button & Mobile Toggle */}
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
+            {/* Updated href from #download to /download */}
             <Link
-              href="#download"
+              href="/download"
               className="relative group overflow-hidden rounded-md px-3 sm:px-5 py-2 font-bold text-[11px] sm:text-xs text-white bg-gradient-to-r from-[#81755D] to-[#635041] border border-white/20 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-95 whitespace-nowrap"
             >
               <span className="relative z-10 flex items-center gap-1 sm:gap-2 tracking-wider uppercase">
@@ -103,13 +103,20 @@ export default function Navbar() {
             >
               Blogs
             </Link>
-            {/* Updated href from #faqs to /faqs */}
             <Link 
               href="/faqs" 
               onClick={() => setIsOpen(false)}
               className="block px-3 py-2 text-sm sm:text-base font-semibold text-[#c9beaa] hover:text-white rounded hover:bg-white/10 transition-all"
             >
               FAQs
+            </Link>
+            {/* Added Download Link for Mobile Menu */}
+            <Link 
+              href="/download" 
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-2 text-sm sm:text-base font-semibold text-[#c9beaa] hover:text-white rounded hover:bg-white/10 transition-all"
+            >
+              Download
             </Link>
           </div>
         )}

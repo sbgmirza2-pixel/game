@@ -31,7 +31,7 @@ export default function DownloadGuideSection() {
   ];
 
   return (
-    <section className="relative w-full py-12 md:py-16 px-4 bg-[#0c0b09] overflow-hidden">
+    <section id="install"className="relative w-full py-12 md:py-16 px-4 bg-[#0c0b09] overflow-hidden">
       
       {/* Background Soft Glow */}
       <div 
