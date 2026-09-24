@@ -1,4 +1,4 @@
-import { blogsData } from './data/blogsData'; 
+import { blogsData } from '@/data/blogsData'; 
 
 export default async function sitemap() {
   const baseUrl = 'https://train45apk.com'; // Aapka exact domain
