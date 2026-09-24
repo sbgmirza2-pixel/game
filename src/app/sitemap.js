@@ -1,12 +1,12 @@
-import { blogsData } from '@/data/blogsData'; 
-
 export default async function sitemap() {
-  const baseUrl = 'https://train45apk.com'; // Aapka exact domain
+  const baseUrl = 'https://train45apk.com';
 
   // Static Pages
   const staticRoutes = [
     '',
     '/blogs',
+    '/download',
+    '/faqs',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString(),
@@ -14,8 +14,14 @@ export default async function sitemap() {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
-  // Dynamic Blog Pages
-  const blogRoutes = Object.keys(blogsData).map((slug) => ({
+  // Agar aapke blogs ke slugs hain, aap yahan manually array me add kar sakte hain
+  const blogSlugs = [
+    'train-45-all-anomalies',
+    'train-45-walkthrough',
+    // mazeed slugs yahan add kar sakte hain
+  ];
+
+  const blogRoutes = blogSlugs.map((slug) => ({
     url: `${baseUrl}/blogs/${slug}`,
     lastModified: new Date().toISOString(),
     changeFrequency: 'monthly',
