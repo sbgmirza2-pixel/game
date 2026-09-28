@@ -22,7 +22,7 @@ export default function ScreenshotSection() {
         {/* Section Heading */}
         <div className="text-center mb-10 md:mb-12">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-            Train 45 APK <span className="text-[#a39478]">Screenshots</span>
+           Screen<span className="text-[#a39478]">shots</span>
           </h2>
         </div>
       </div>
