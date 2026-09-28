@@ -12,7 +12,7 @@ const fontOutfit = Outfit({
 export const metadata = {
   title: 'Train 45 APK Download - Official Latest Version',
   description: 'Download Train 45 APK latest version. Explore gameplay, system requirements, and complete features guide.',
-  keywords: ['Train 45 APK', 'Train 45 latest version', 'download android game'],
+  
   alternates: {
     canonical: 'https://train45apk.com', 
   },

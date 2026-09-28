@@ -9,7 +9,7 @@ import SafetySection from './components/SafetySection';
 import TipsSection from './components/TipsSection';
 import ProsConsSection from './components/ProsConsSection';
 import ComparisonSection from './components/ComparisonSection';
-import FaqPreviewSection from './components/FaqPreviewSection';
+import FaqPreviewSection from './components/FaqPreviewSection';y
 import ScreenshotSection from './components/ScreenShotSection';
 
 const SITE_URL = 'https://train45apk.com';
@@ -18,13 +18,7 @@ export const metadata = {
   title: 'Train 45 APK Guide: Features, Download & Requirements',
   description:
     'Train 45 APK guide covering gameplay, key features, system requirements, safety tips, and important details about its official Steam version.',
-  keywords: [
-    'Train 45',
-    'Train 45 APK',
-    'Train 45 Guide',
-    'Train 45 Gameplay',
-    'Train 45 System Requirements',
-  ],
+  
   alternates: {
     canonical: SITE_URL,
   },

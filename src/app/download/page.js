@@ -18,7 +18,7 @@ export default function DownloadPage() {
   }, [timeLeft]);
 
   const handleDownload = () => {
-    window.location.href = '/train-45.apk'; // Download path update karein
+    window.location.href = 'https://download2347.mediafire.com/mnzebo8bx5rgj8drXKFx7WEOjS1nz7C9cFr8hQwifxYer0zA2SKtbRHtjasz-y2L-dAxfsCmzM6z2b8q5A02LOLSotdasUFGpQ3AubDxyoLYnd5QBkA_V98oJNrMMxgCV01_a6avywHl5yE-GjMZnOrj7d7rRpeR6EpBbpCMX8uEQBBt/v6w0ltm269gztc1/Train45.rar'; 
   };
 
   return (
