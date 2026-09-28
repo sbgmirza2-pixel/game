@@ -10,6 +10,7 @@ import TipsSection from './components/TipsSection';
 import ProsConsSection from './components/ProsConsSection';
 import ComparisonSection from './components/ComparisonSection';
 import FaqPreviewSection from './components/FaqPreviewSection';
+import ScreenshotSection from './components/ScreenShotSection';
 
 const SITE_URL = 'https://train45apk.com';
 
@@ -59,6 +60,7 @@ export default function HomePage() {
         <Hero />
         <AboutSection />
         <GameInfoSection />
+        <ScreenshotSection />
         <FeaturesSection />
         <DownloadGuideSection />
         <SystemRequirementsSection />

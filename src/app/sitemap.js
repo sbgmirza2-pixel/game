@@ -14,11 +14,12 @@ export default async function sitemap() {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
-  // Agar aapke blogs ke slugs hain, aap yahan manually array me add kar sakte hain
+  
   const blogSlugs = [
     'train-45-all-anomalies',
     'train-45-walkthrough',
-    // mazeed slugs yahan add kar sakte hain
+    'train-45-endings',
+    'train-45-gameplay'
   ];
 
   const blogRoutes = blogSlugs.map((slug) => ({
