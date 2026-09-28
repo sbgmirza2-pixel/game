@@ -15,7 +15,7 @@ import ScreenshotSection from './components/ScreenShotSection';
 const SITE_URL = 'https://train45apk.com';
 
 export const metadata = {
-  title: 'Train 45 APK Guide: Features, Download & Requirements',
+  title: 'Train45 APK v1.0.5.1 – Latest Version Download for Android',
   description:
     'Train 45 APK guide covering gameplay, key features, system requirements, safety tips, and important details about its official Steam version.',
   
@@ -23,7 +23,7 @@ export const metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: 'Train 45 APK Guide: Features, Download & Requirements',
+    title: 'Train45 APK v1.0.5.1 – Latest Version Download for Android',
     description:
       'Train 45 APK guide covering gameplay, key features, system requirements, safety tips, and important details about its official Steam version.',
     url: SITE_URL,

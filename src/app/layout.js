@@ -10,14 +10,14 @@ const fontOutfit = Outfit({
 });
 
 export const metadata = {
-  title: 'Train 45 APK Download - Official Latest Version',
+  title: 'Train45 APK v1.0.5.1 – Latest Version Download for Android',
   description: 'Download Train 45 APK latest version. Explore gameplay, system requirements, and complete features guide.',
   
   alternates: {
     canonical: 'https://train45apk.com', 
   },
   openGraph: {
-    title: 'Train 45 APK Download - Official Latest Version',
+    title: 'Train45 APK v1.0.5.1 – Latest Version Download for Android',
     description: 'Download Train 45 APK latest version. Explore gameplay, system requirements, and complete features guide.',
     url: 'https://train45apk.com',
     siteName: 'Train 45 APK',
