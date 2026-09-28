@@ -1,0 +1,22 @@
+# Train 45 APK
+
+> Train 45 APK is an adaptation of the psychological puzzle game featuring endless railway carriages and anomalous choice-driven gameplay for Android users.
+
+## Overview
+- **Website:** https://train45apk.com
+- **Latest Version:** v1.0.5.1
+- **Supported OS:** Android 5.0 and above
+- **Genre:** Pixel-style Psychological Puzzle / Adventure
+
+## Core Pages & Resources
+- [Home](https://train45apk.com/): Main landing page featuring overview, screenshots, features, and system requirements.
+- [About Us](https://train45apk.com/about-us): Learn more about the editorial team and project background.
+- [Contact Us](https://train45apk.com/contact-us): Get in touch with the support and editorial team.
+- [Privacy Policy](https://train45apk.com/privacy-policy): Read about user data protection and privacy guidelines.
+- [Terms & Conditions](https://train45apk.com/terms-and-conditions): Review rules, guidelines, and terms of use.
+- [Disclaimer](https://train45apk.com/disclaimer): Important legal notices regarding third-party apps and original developers.
+
+## Key Features & Highlights
+- Endless railway carriage mechanics with psychological anomalies.
+- Optimized performance and smooth user interface for Android devices.
+- Comprehensive guides, safety tips, and step-by-step installation instructions.

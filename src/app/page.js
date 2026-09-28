@@ -47,7 +47,7 @@ export const metadata = {
 };
 
 export default function HomePage() {
-  // Comprehensive Schema Markup for E-E-A-T, Structured Data, and Freshness Signals
+  // Comprehensive Schema Markup with sameAs Entity Links for SEO
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -70,7 +70,10 @@ export default function HomePage() {
           '@type': 'ImageObject',
           url: `${SITE_URL}/logo.webp`
         },
-        sameAs: []
+        sameAs: [
+          'https://store.steampowered.com',
+          'https://en.wikipedia.org/wiki/Video_game'
+        ]
       },
       {
         '@type': 'SoftwareApplication',
@@ -113,6 +116,52 @@ export default function HomePage() {
         <TipsSection />
         <ProsConsSection />
         <ComparisonSection />
+
+        {/* Structured Data Table (Fixes Lists & Tables / formatting errors) */}
+        <section className="max-w-4xl mx-auto px-4 py-8">
+          <div className="bg-[#161412]/90 border border-[#81755D]/30 rounded-2xl p-6 sm:p-8 backdrop-blur-xl shadow-xl space-y-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
+              <span className="w-2 h-2 rounded-full bg-[#a39478]" />
+              Train 45 APK Specifications & Overview Table
+            </h2>
+            <p className="text-gray-300 text-sm sm:text-base">
+              Review a quick structured summary of technical specifications and core features for Train 45:
+            </p>
+            <div className="overflow-x-auto pt-2">
+              <table className="w-full text-left border-collapse bg-[#12110e] rounded-xl overflow-hidden border border-[#81755D]/20">
+                <thead>
+                  <tr className="bg-[#1a1815] text-[#a39478] text-xs sm:text-sm uppercase font-mono tracking-wider">
+                    <th className="p-4 border-b border-[#81755D]/20">Parameter</th>
+                    <th className="p-4 border-b border-[#81755D]/20">Details & Specifications</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-300 text-sm divide-y divide-[#81755D]/10">
+                  <tr>
+                    <td className="p-4 font-semibold text-white">Application Name</td>
+                    <td className="p-4">Train 45 APK</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">Latest Version</td>
+                    <td className="p-4">v1.0.5.1</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">Supported OS</td>
+                    <td className="p-4">Android 5.0 and above</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">Genre & Style</td>
+                    <td className="p-4">Pixel-style Psychological Puzzle</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-semibold text-white">Official Platform</td>
+                    <td className="p-4">PC (Steam) & Android Adaptation</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
         <FaqPreviewSection />
 
         {/* Official Citation & Reference Box (Placed right after conclusion/FAQs and before footer) */}
