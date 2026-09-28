@@ -33,12 +33,32 @@ export default function FaqPage() {
     },
   ];
 
+  // FAQPage Schema Markup for SEO
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: allFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.a,
+      },
+    })),
+  };
+
   const toggleFaq = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
     <div className="min-h-screen bg-[#0c0b09]">
+      {/* Injecting FAQ Schema for SEO tool */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Navbar Header */}
       <Navbar />
 
