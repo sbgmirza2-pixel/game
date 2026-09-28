@@ -41,7 +41,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Global SEO Schema Markup (Organization & WebSite) to fix tool errors
+  // Global SEO Schema Markup with sameAs Entity Links
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -65,9 +65,8 @@ export default function RootLayout({ children }) {
           url: 'https://train45apk.com/logo.webp'
         },
         sameAs: [
-          // Agar aapke koi social media profiles hain toh unke links yahan daal sakte hain
-          // 'https://twitter.com/yourprofile',
-          // 'https://facebook.com/yourprofile'
+          'https://store.steampowered.com', // Official game platform reference
+          'https://en.wikipedia.org/wiki/Video_game' // Relevant authority reference for entity consolidation
         ]
       }
     ]
