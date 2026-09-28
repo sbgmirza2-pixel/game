@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar'; // Path verify kar lein
+import Navbar from '../components/Navbar'; 
+import Link from 'next/link';
 
 export default function DownloadPage() {
   const [timeLeft, setTimeLeft] = useState(10);
@@ -48,9 +49,12 @@ export default function DownloadPage() {
             {/* Gradient Line right under the Heading */}
             <div className="w-20 h-1 bg-gradient-to-r from-[#81755D] via-[#a39478] to-transparent rounded-full" />
 
-            <p className="text-gray-300 text-sm sm:text-base leading-relaxed pt-2">
-              Train 45 is a pixel-style puzzle game set on a mysterious endless train. You explore different carriages, look for strange changes, and make careful choices as the story moves forward.
-            </p>
+           <p className="text-gray-300 text-sm sm:text-base leading-relaxed pt-2">
+  <Link href="/" className="text-[#81755D] font-semibold hover:underline">
+    Train 45
+  </Link>{' '}
+  is a pixel-style puzzle game set on a mysterious endless train. You explore different carriages, look for strange changes, and make careful choices as the story moves forward.
+</p>
           </header>
 
           {/* High-Tech Radar Scanner Download Section */}
