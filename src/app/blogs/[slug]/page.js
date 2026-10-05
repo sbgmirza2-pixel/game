@@ -3,10 +3,9 @@ import { notFound } from 'next/navigation';
 import Navbar from '../../components/Navbar';
 import { blogsData } from '../../data/blogs';
 
-
 const SITE_URL = 'https://train45apk.com';
 
-// Dynamic SEO Metadata (Open Graph & Twitter Cards)
+// Dynamic SEO Metadata including Canonical Tag for every slug
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const blog = blogsData[slug];
@@ -14,14 +13,14 @@ export async function generateMetadata({ params }) {
   if (!blog) return {};
 
   const pageUrl = `${SITE_URL}/blogs/${slug}`;
-  const ogImageUrl = `${SITE_URL}/logo.webp`; // Updated to logo.webp
+  const ogImageUrl = `${SITE_URL}/logo.webp`;
 
   return {
     title: `${blog.title} | Train 45 APK`,
     description: blog.description,
     keywords: [blog.focusKeyword, 'Train 45', 'Train 45 Guide', blog.category],
     alternates: {
-      canonical: pageUrl,
+      canonical: pageUrl, // Yeh har individual slug ka apna canonical URL banayega
     },
     openGraph: {
       title: blog.title,
@@ -85,7 +84,7 @@ export default async function BlogDetailsPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-<Navbar />
+      <Navbar />
       <article className="min-h-screen pt-28 pb-16 px-4 bg-[#0c0b09] text-gray-200">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Breadcrumb Navigation */}

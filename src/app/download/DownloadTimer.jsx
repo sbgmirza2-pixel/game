@@ -1,0 +1,78 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+
+export default function DownloadTimer() {
+  const [timeLeft, setTimeLeft] = useState(10);
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    if (timeLeft > 0) {
+      const timer = setTimeout(() => setTimeLeft((prev) => prev - 1), 1000);
+      return () => clearTimeout(timer);
+    } else {
+      setIsReady(true);
+    }
+  }, [timeLeft]);
+
+  const handleDownload = () => {
+    window.location.href = 'https://download2347.mediafire.com/mnzebo8bx5rgj8drXKFx7WEOjS1nz7C9cFr8hQwifxYer0zA2SKtbRHtjasz-y2L-dAxfsCmzM6z2b8q5A02LOLSotdasUFGpQ3AubDxyoLYnd5QBkA_V98oJNrMMxgCV01_a6avywHl5yE-GjMZnOrj7d7rRpeR6EpBbpCMX8uEQBBt/v6w0ltm269gztc1/Train45.rar'; 
+  };
+
+  return (
+    <section className="bg-[#12110e]/90 border border-[#81755D]/30 rounded-2xl p-6 sm:p-10 backdrop-blur-xl shadow-2xl space-y-6">
+      <p className="text-gray-300 text-sm sm:text-base text-center max-w-lg mx-auto">
+        The timer will finish in a few seconds. Tap the download button below once it ends to start your Train 45 download.
+      </p>
+
+      <div className="flex flex-col items-center justify-center pt-2 min-h-[140px]">
+        {!isReady ? (
+          <div className="relative group flex flex-col items-center justify-center p-6 bg-[#161411] border border-[#81755D]/40 rounded-2xl w-full max-w-sm shadow-[0_0_25px_rgba(129,117,93,0.15)] overflow-hidden">
+            
+            {/* Background Scanner Glow Effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#81755D]/10 to-transparent animate-[shimmer_2s_infinite]" />
+
+            {/* Circular Radar Pulse */}
+            <div className="relative flex items-center justify-center w-20 h-20 mb-3">
+              <div className="absolute inset-0 rounded-full border border-[#81755D]/30 animate-ping opacity-75" />
+              <div className="absolute inset-2 rounded-full border border-t-[#a39478] border-r-transparent border-b-[#81755D]/20 border-l-transparent animate-spin" />
+              
+              {/* Digit Container */}
+              <div className="w-14 h-14 rounded-full bg-[#0c0b09] border border-[#a39478]/50 flex items-center justify-center shadow-inner">
+                <span className="text-2xl font-black text-[#a39478] font-mono tracking-tighter">
+                  {timeLeft}s
+                </span>
+              </div>
+            </div>
+
+            {/* Status Indicator */}
+            <div className="flex items-center gap-2 text-xs text-gray-400 font-mono tracking-wider uppercase">
+              <span className="w-2 h-2 rounded-full bg-[#a39478] animate-pulse" />
+              <span>Verifying File Link...</span>
+            </div>
+          </div>
+        ) : (
+          <button
+            onClick={handleDownload}
+            className="bg-[#a39478] hover:bg-[#8e7e63] text-black font-extrabold py-4 px-10 rounded-xl transition-all shadow-[0_0_25px_rgba(163,148,120,0.35)] transform hover:scale-105 active:scale-95 text-base sm:text-lg flex items-center gap-3 cursor-pointer"
+          >
+            <svg
+              className="w-6 h-6 animate-bounce"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2.5"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
+            </svg>
+            Download Train 45 APK
+          </button>
+        )}
+      </div>
+    </section>
+  );
+}

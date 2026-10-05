@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
-
+const SITE_URL = 'https://train45apk.com';
 export const metadata = {
   title: 'Privacy Policy | Train 45 APK Guide & Information',
   description:
     'Read our Privacy Policy to understand how visitor information, cookies, analytics, advertising services, and third-party links may be handled.',
+  alternates: {
+    canonical: `${SITE_URL}/privacy-policy`
+  },
 };
 
 export default function PrivacyPolicy() {

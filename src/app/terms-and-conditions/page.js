@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
-
+const SITE_URL = 'https://train45apk.com';
 export const metadata = {
   title: 'Terms & Conditions | Train 45 APK Guide & Information',
   description:
     'Read the Terms and Conditions for using our website, including game content, guides, downloads, external links, and general user responsibilities.',
+  alternates: {
+    canonical: `${SITE_URL}/terms-and-conditions`
+  }
 };
 
 export default function TermsAndConditions() {
