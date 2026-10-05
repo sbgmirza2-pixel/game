@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar';
 import Link from 'next/link';
-import DownloadTimer from '.DownloadTimer'; // Client component import
+import DownloadTimer from './DownloadTimer'; // Client component import
 const SITE_URL = 'https://train45apk.com';
 // SEO Metadata including Canonical Tag
 export const metadata = {
