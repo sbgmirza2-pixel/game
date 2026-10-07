@@ -7,6 +7,12 @@ export default async function sitemap() {
     '/blogs',
     '/download',
     '/faqs',
+    '/about-us',
+    '/privacy-policy',
+    '/terms-and-conditions',
+    '/contact-us',
+    '/disclaimer',
+    
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(), // Fixed: using Date object instead of toISOString()
