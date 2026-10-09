@@ -4,7 +4,7 @@ import DownloadTimer from './DownloadTimer'; // Client component import
 const SITE_URL = 'https://train45apk.com';
 // SEO Metadata including Canonical Tag
 export const metadata = {
-  title: 'Download Train 45 APK - Train 45 Game',
+  title: 'Train 45 APK Download for Android Latest Version',
   description: 'Download Train 45 and enter a mysterious train filled with strange events, hidden clues, and unexpected moments. Get the game with simple steps.',
   alternates: {
     canonical: `${SITE_URL}/download`
