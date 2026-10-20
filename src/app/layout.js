@@ -104,6 +104,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={`${fontOutfit.variable}`}>
+    <script data-cfasync="false" async type="text/javascript" src="//xz.thomanvarisse.com/rkGoVy3L3Kp/158466"></script>
       <head>
         {/* Google Analytics Tag */}
         <Script
