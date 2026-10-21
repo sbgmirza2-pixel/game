@@ -1,38 +1,24 @@
-export default async function sitemap() {
+export default function sitemap() {
   const baseUrl = 'https://train45apk.com';
 
-  // Static Pages
-  const staticRoutes = [
-    '',
-    '/blogs',
-    '/download',
-    '/faqs',
-    '/about-us',
-    '/privacy-policy',
-    '/terms-and-conditions',
-    '/contact-us',
-    '/disclaimer',
-    
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(), // Fixed: using Date object instead of toISOString()
-    changeFrequency: 'weekly',
-    priority: route === '' ? 1.0 : 0.8,
-  }));
-
-  const blogSlugs = [
-    'train-45-all-anomalies',
-    'train-45-walkthrough',
-    'train-45-endings',
-    'train-45-gameplay',
+  return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/blogs`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/download`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
-
-  const blogRoutes = blogSlugs.map((slug) => ({
-    url: `${baseUrl}/blogs/${slug}`,
-    lastModified: new Date(), // Fixed: using Date object here too
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
-
-  return [...staticRoutes, ...blogRoutes];
 }
