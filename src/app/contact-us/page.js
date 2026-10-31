@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Navbar from '../components/Navbar';
 const SITE_URL = 'https://train45apk.com';
 export const metadata = {
-  title: 'Contact Us | Train 45 APK Guide & Information',
+  title: 'Contact Us ',
   description:
     'Have a question, suggestion, or concern? Contact us about game information, guides, corrections, broken links, or other website-related matters.',
   alternates: {

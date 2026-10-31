@@ -5,7 +5,7 @@ const SITE_URL = 'https://train45apk.com';
 
 // Main Blogs Page Metadata & Canonical
 export const metadata = {
-  title: 'Blogs & Guides | Train 45 APK',
+  title: 'Blogs ',
   description:
     'Explore our complete guides, walkthroughs, anomalies lists, gameplay mechanics, and ending guides for Train 45.',
   alternates: {

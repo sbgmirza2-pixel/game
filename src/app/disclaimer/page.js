@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Navbar from '../components/Navbar';
 const SITE_URL = 'https://train45apk.com';
 export const metadata = {
-  title: 'Disclaimer | Train 45 APK Guide & Information',
+  title: 'Disclaimer',
   description:
     'Read our Disclaimer to understand the limits of our game information, guides, downloads, third-party links, and other website content.',
   alternates: {

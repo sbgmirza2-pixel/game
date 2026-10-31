@@ -3,7 +3,7 @@ import FaqAccordion from './FaqAccordion';
 const SITE_URL = 'https://train45apk.com';
 // SEO Metadata including Canonical Tag
 export const metadata = {
-  title: 'Frequently Asked Questions - Train 45',
+  title: 'FAQs',
   description: 'Find complete details and answers about Train 45 APK, gameplay, beginner guides, and system requirements.',
   alternates: {
     canonical: `${SITE_URL}/faqs`, 

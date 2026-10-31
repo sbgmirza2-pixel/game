@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
   const ogImageUrl = `${SITE_URL}/logo.webp`;
 
   return {
-    title: `${blog.title} | Train 45 APK`,
+    title: `${blog.title} `,
     description: blog.description,
     keywords: [blog.focusKeyword, 'Train 45', 'Train 45 Guide', blog.category],
     alternates: {

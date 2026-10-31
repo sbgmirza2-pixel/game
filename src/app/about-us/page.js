@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 const SITE_URL = 'https://train45apk.com';
 
 export const metadata = {
-  title: 'About Us | Train 45 APK Guide & Information',
+  title: 'About Us ',
   description: 'Learn more about our website, the game information we provide, and how we help players find useful guides, tips, and download details.',
   alternates: {
     canonical: `${SITE_URL}/about-us`
