@@ -12,7 +12,7 @@ const fontOutfit = Outfit({
 
 export const metadata = {
   title: 'Train45 APK v1.0.5.1 – Latest Version Download for Android',
-  description: 'Download Train 45 APK latest version. Explore gameplay, system requirements, and complete features guide.',
+        description: 'Train 45 APK guide covering gameplay, key features, system requirements, safety tips, and important details.',
   authors: [{ name: 'Train45 Team', url: 'https://train45apk.com/about-us' }],
   creator: 'Train45',
   publisher: 'Train45',
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
       {
         '@type': 'Organization',
         '@id': 'https://train45apk.com/#organization',
-        name: 'Train 45 APK',
+        name: 'Train 45 ',
         url: 'https://train45apk.com',
         logo: {
           '@type': 'ImageObject',
@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
       {
         '@type': 'SoftwareApplication',
         '@id': 'https://train45apk.com/#software',
-        name: 'Train 45 APK',
+        name: 'Train 45 ',
         operatingSystem: 'ANDROID',
         applicationCategory: 'GameApplication',
         softwareVersion: '1.0.5.1',

@@ -23,7 +23,7 @@ export default function HomePage() {
         '@type': 'WebSite',
         '@id': `${SITE_URL}/#website`,
         url: SITE_URL,
-        name: 'Train 45 APK',
+        name: 'Train 45 ',
         description: 'Train 45 APK guide covering gameplay, key features, system requirements, safety tips, and important details.',
         publisher: {
           '@id': `${SITE_URL}/#organization`
@@ -106,7 +106,7 @@ export default function HomePage() {
                 <tbody className="text-gray-300 text-sm divide-y divide-[#81755D]/10">
                   <tr>
                     <td className="p-4 font-semibold text-white">Application Name</td>
-                    <td className="p-4">Train 45 APK</td>
+                    <td className="p-4">Train 45 </td>
                   </tr>
                   <tr>
                     <td className="p-4 font-semibold text-white">Latest Version</td>
