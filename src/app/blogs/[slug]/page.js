@@ -18,7 +18,6 @@ export async function generateMetadata({ params }) {
   return {
     title: `${blog.title} `,
     description: blog.description,
-    keywords: [blog.focusKeyword, 'Train 45', 'Train 45 Guide', blog.category],
     alternates: {
       canonical: pageUrl, // Yeh har individual slug ka apna canonical URL banayega
     },
@@ -26,7 +25,7 @@ export async function generateMetadata({ params }) {
       title: blog.title,
       description: blog.description,
       url: pageUrl,
-      siteName: 'Train 45 APK',
+      siteName: 'Train 45 ',
       images: [
         {
           url: ogImageUrl,
@@ -59,12 +58,12 @@ export default async function BlogDetailsPage({ params }) {
     '@type': 'BlogPosting',
     headline: blog.title,
     description: blog.description,
-    keywords: blog.focusKeyword,
+    
     image: `${SITE_URL}/logo.webp`,
     url: `${SITE_URL}/blogs/${slug}`,
     publisher: {
       '@type': 'Organization',
-      name: 'Train 45 APK',
+      name: 'Train 45 ',
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',

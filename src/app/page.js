@@ -45,7 +45,7 @@ export default function HomePage() {
       },
       {
         '@type': 'SoftwareApplication',
-        name: 'Train 45 APK',
+        name: 'Train 45 ',
         operatingSystem: 'ANDROID',
         applicationCategory: 'GameApplication',
         offers: {

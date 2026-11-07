@@ -23,7 +23,7 @@ export const metadata = {
     title: 'Train45 APK v1.0.5.1 – Latest Version Download for Android',
     description: 'Download Train 45 APK latest version. Explore gameplay, system requirements, and complete features guide.',
     url: 'https://train45apk.com',
-    siteName: 'Train 45 APK',
+    siteName: 'Train 45 ',
     images: [
       {
         url: 'https://train45apk.com/logo.webp',
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
         '@type': 'WebSite',
         '@id': 'https://train45apk.com/#website',
         url: 'https://train45apk.com',
-        name: 'Train 45 APK',
+        name: 'Train 45',
         description: 'Download Train 45 APK latest version. Explore gameplay, system requirements, and complete features guide.',
         publisher: {
           '@id': 'https://train45apk.com/#organization'
