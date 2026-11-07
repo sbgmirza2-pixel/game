@@ -24,7 +24,7 @@ export default function HomePage() {
         '@id': `${SITE_URL}/#website`,
         url: SITE_URL,
         name: 'Train 45 ',
-        title: 'Train45 APK v1.0.5.1 – Latest Version Download for Android',
+        
         description: 'Train 45 APK guide covering gameplay, key features, system requirements, safety tips, and important details.',
         publisher: {
           '@id': `${SITE_URL}/#organization`
